@@ -23,7 +23,7 @@ export default function HeroSection() {
         >
           As your trusted implementation partner, we embed seasoned consultants directly into your existing software
           teams—scaling your capacity, expertise, and delivery velocity. Staffing is our core: whether you need a single
-          specialist or an entire squad, met<span className="text-indigo-600 font-bold">ai</span>ntuit delivers the
+          specialist or an entire squad, metaintuit delivers the
           right engineers, the right way.
         </motion.p>
         <motion.div
