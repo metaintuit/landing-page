@@ -89,18 +89,6 @@ export default function ContactSection() {
             </div>
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-indigo-100 dark:bg-indigo-900/50 p-3 rounded-full">
-                <Phone className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold font-heading">Phone</h3>
-                <p className="text-gray-600 dark:text-gray-300">Give us a call during business hours.</p>
-                <a href="tel:+14699986267" className="text-indigo-600 dark:text-indigo-400 hover:underline">
-                  +1 (469) 998-6267
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 bg-indigo-100 dark:bg-indigo-900/50 p-3 rounded-full">
                 <MapPin className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
               </div>
               <div>
