@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "metaintuit – AI-Driven IT Staffing & Software",
   description:
     "Augment your team with top IT talent. As your trusted implementation partner, we embed seasoned consultants directly into your existing software teams—scaling your capacity, expertise, and delivery velocity.",
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
