@@ -10,10 +10,10 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { name: "Partnership", href: "#partnership" },
-    { name: "Products", href: "#products" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "Partnership", href: "/#partnership" },
+    { name: "Products", href: "/#products" },
+    { name: "Services", href: "/#services" },
+    { name: "Contact", href: "/#contact" },
   ]
 
   return (
