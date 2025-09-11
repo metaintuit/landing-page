@@ -5,12 +5,58 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Privacy Policy - metaintuit",
   description:
-    "MetaIntuit Corp privacy policy explaining how we collect, use, and safeguard your personal information.",
+    "MetaIntuit Corp privacy policy explaining how we collect, use, and safeguard your personal information. We do not sell, share, or rent consumer personal information to third parties.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Privacy Policy - metaintuit",
+    description: "MetaIntuit Corp privacy policy - we do not sell or share personal information with third parties.",
+    url: "https://metaintuit.com/privacypolicy",
+    siteName: "metaintuit",
+    type: "website",
+  },
+}
+
+const privacyPolicySchema = {
+  "@context": "https://schema.org",
+  "@type": "PrivacyPolicy",
+  name: "MetaIntuit Corp Privacy Policy",
+  url: "https://metaintuit.com/privacypolicy",
+  datePublished: "2025-09-03",
+  dateModified: "2025-09-03",
+  publisher: {
+    "@type": "Organization",
+    name: "MetaIntuit Corp",
+    url: "https://metaintuit.com",
+  },
+  description:
+    "Privacy policy for MetaIntuit Corp explaining data collection, usage, and protection practices. We do not sell, share, or rent consumer personal information to third parties.",
+  inLanguage: "en-US",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "metaintuit",
+    url: "https://metaintuit.com",
+  },
 }
 
 export default function PrivacyPolicyPage() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-white dark:bg-gray-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(privacyPolicySchema),
+        }}
+      />
       <Header />
       <main className="flex-1 pt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -140,10 +186,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   To exercise your rights, please contact us at:{" "}
-                  <a
-                    href="mailto:hr@metaintuit.com"
-                    className="text-indigo-600 dark:text-indigo-400 hover:underline"
-                  >
+                  <a href="mailto:hr@metaintuit.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">
                     hr@metaintuit.com
                   </a>
                   .
@@ -169,10 +212,7 @@ export default function PrivacyPolicyPage() {
                   <p className="text-gray-700 dark:text-gray-300 font-semibold mb-2">MetaIntuit Corp</p>
                   <p className="text-gray-700 dark:text-gray-300 mb-2">
                     Email:{" "}
-                    <a
-                      href="mailto:hr@metaintuit.com"
-                      className="text-indigo-600 dark:text-indigo-400 hover:underline"
-                    >
+                    <a href="mailto:hr@metaintuit.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">
                       hr@metaintuit.com
                     </a>
                   </p>
@@ -193,7 +233,10 @@ export default function PrivacyPolicyPage() {
                   </h3>
                   <p className="text-green-700 dark:text-green-300 leading-relaxed">
                     MetaIntuit does not sell, share, or rent consumer personal information (including phone numbers) to
-                    third parties or affiliates for marketing or lead generation purposes. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties
+                    third parties or affiliates for marketing or lead generation purposes. No mobile information will be
+                    shared with third parties/affiliates for marketing/promotional purposes. All other categories
+                    exclude text messaging originator opt-in data and consent; this information will not be shared with
+                    any third parties
                   </p>
                 </div>
               </section>
