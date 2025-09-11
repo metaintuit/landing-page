@@ -109,7 +109,7 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-xl font-bold font-heading">Location</h3>
                 <p className="text-gray-600 dark:text-gray-300">8 The Green #12032, Dover, DE, 19901</p>
-                <p className="text-indigo-600 dark:text-indigo-400">Texas, USA</p>
+                <p className="text-indigo-600 dark:text-indigo-400">Delaware, USA</p>
               </div>
             </div>
           </div>
