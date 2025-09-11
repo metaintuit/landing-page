@@ -141,7 +141,7 @@ export default function PrivacyPolicyPage() {
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   To exercise your rights, please contact us at:{" "}
                   <a
-                    href="mailto:privacy@metaintuit.com"
+                    href="mailto:hr@metaintuit.com"
                     className="text-indigo-600 dark:text-indigo-400 hover:underline"
                   >
                     hr@metaintuit.com
@@ -170,10 +170,10 @@ export default function PrivacyPolicyPage() {
                   <p className="text-gray-700 dark:text-gray-300 mb-2">
                     Email:{" "}
                     <a
-                      href="mailto:privacy@metaintuit.com"
+                      href="mailto:hr@metaintuit.com"
                       className="text-indigo-600 dark:text-indigo-400 hover:underline"
                     >
-                      privacy@metaintuit.com
+                      hr@metaintuit.com
                     </a>
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
@@ -193,7 +193,7 @@ export default function PrivacyPolicyPage() {
                   </h3>
                   <p className="text-green-700 dark:text-green-300 leading-relaxed">
                     MetaIntuit does not sell, share, or rent consumer personal information (including phone numbers) to
-                    third parties or affiliates for marketing or lead generation purposes.
+                    third parties or affiliates for marketing or lead generation purposes. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties
                   </p>
                 </div>
               </section>
