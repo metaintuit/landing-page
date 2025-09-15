@@ -95,10 +95,10 @@ export default function ContactSection() {
                 <h3 className="text-xl font-bold font-heading">Phone</h3>
                 <p className="text-gray-600 dark:text-gray-300">Give us a call during business hours.</p>
                 <span
-                  onClick={() => (window.location.href = 'tel:+14699986267')}
+                  onClick={() => (window.location.href = "tel:+14699986267")}
                   className="text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer"
                 >
-                  {['+1', ' (469) ', '998', '-', '6267'].join('')}
+                  {["+1", " (469) ", "998", "-", "6267"].join("")}
                 </span>
               </div>
             </div>
@@ -179,6 +179,17 @@ export default function ContactSection() {
               </div>
             )}
           </form>
+          <div className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mt-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border">
+            <p>
+              By providing a telephone number and submitting the form, you are consenting to be contacted by SMS text
+              message and agreeing to our{" "}
+              <a href="/privacypolicy" className="text-indigo-600 dark:text-indigo-400 hover:underline">
+                Privacy Policy
+              </a>
+              . Message frequency may vary. Message and data rates may apply. Reply STOP to opt out of further
+              messaging. Reply HELP for more information.
+            </p>
+          </div>
         </motion.div>
       </motion.div>
     </section>

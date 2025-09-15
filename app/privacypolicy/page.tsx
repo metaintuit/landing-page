@@ -232,12 +232,14 @@ export default function PrivacyPolicyPage() {
                     Compliance Statement
                   </h3>
                   <p className="text-green-700 dark:text-green-300 leading-relaxed">
-                    MetaIntuit does not sell, share, or rent consumer personal information (including phone numbers) to
-                    third parties or affiliates for marketing or lead generation purposes. No mobile information will be
-                    shared with third parties/affiliates for marketing/promotional purposes. All other categories
-                    exclude text messaging originator opt-in data and consent; this information will not be shared with
-                    any third parties
-                  </p>
+                      MetaIntuit does not sell, share, or rent consumer personal information
+                      (including phone numbers) to third parties or affiliates for marketing or
+                      lead-generation purposes.
+                      <strong className="text-green-700 dark:text-green-300 leading-relaxed">No mobile information, text message originator
+                      opt-in data, or consent will be shared with any third parties or affiliates
+                      for marketing or promotional purposes.
+                      </strong>
+                    </p>
                 </div>
               </section>
             </div>
